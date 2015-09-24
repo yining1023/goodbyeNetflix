@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Goodbye Netflix",
+  "description": "This extension shows popout when you are at netflix every 15 mins",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "alarms",
+    "https://ajax.googleapis.com/"
+  ],
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  }
+}
